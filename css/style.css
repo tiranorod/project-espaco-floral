@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ec167e;
-  --secondary-color: #fbcee4;
-  --secondary-color-op: rgba(251, 206, 228, 0.8);
+  --secondary-color: #fff;
+  --secondary-color-op: rgba(255, 255, 255, 0.8);
   --tertiary-color: #7C318F;
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Montez', cursive;
