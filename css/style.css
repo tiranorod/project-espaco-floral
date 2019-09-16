@@ -1,0 +1,260 @@
+:root {
+  --primary-color: #ec167e;
+  --secondary-color: #fbcee4;
+  --secondary-color-op: rgba(251, 206, 228, 0.8);
+  --tertiary-color: #7C318F;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Montez', cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--primary-font);
+  line-height: 1.4;
+  background: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.bg-light {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.l-txt {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-txt {
+  font-size: 2rem;
+}
+
+.p-1 { padding: 1.5rem; }
+
+.p-2 { padding: 2rem; }
+
+.p-3 { padding: 3rem; }
+
+.py-1 { padding: 1.5rem 0; }
+
+.py-2 { padding: 2rem 0; }
+
+.py-3 { padding: 3rem 0; }
+
+/* Main Header Styles */
+/* Main Navigation Bar of the page */
+#navbar {
+  display: flex;
+  position: relative;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  top: 0;
+  left: 0;
+  height: 115px;
+  width: 100vw;
+  justify-content: space-around;
+  z-index: 1;
+  opacity: 0.9;
+  border-bottom: 2px var(--tertiary-color) solid;
+}
+
+#navbar .logo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+#navbar .logo #logotxt {
+  padding-left: 2rem;
+}
+
+#navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+} 
+
+#navbar .nav-btn {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-size: 3.4rem;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+#navbar .nav-btn:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Showcase Styles */
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color) url('/img/madeira-floral-m.png') no-repeat center center/cover;
+  color: var(--primary-color);
+  position: relative;
+  height: 500px;
+  border-bottom: 2px var(--tertiary-color) solid;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary-color-op);
+}
+
+.showcase-heading {
+  font-family: var(--primary-font);
+  font-size: 4rem;
+  color: var(--tertiary-color);
+  width: 600px;
+  padding-bottom: 3rem;
+}
+
+.showcase-txt {
+  margin-bottom: 2rem;
+  width: 600px;
+  color: var(--tertiary-color);
+}
+
+.right-arrow {
+  position: absolute;
+  top: 254px;
+  right: 10px;
+}
+
+.fa-angle-right {
+  color: var(--tertiary-color);
+  font-size: 3rem;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  opacity: 0.75;
+  padding: 6px 13.5px;
+  border: 2px solid var(--tertiary-color);
+}
+
+#showcase .showcase-content .btn {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  border: 2px solid var(--primary-color);
+}
+
+#showcase .showcase-content .btn:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border: 2px solid var(--tertiary-color);
+}
+
+
+/* Serviços Styles */
+#servicos h2 {
+  font-family: var(--secondary-font);
+  padding: 10px 0;
+}
+
+#servicos .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#servicos .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border-right: 3px solid var(--secondary-color);
+}
+
+#servicos .items .item:last-child {
+  border-right: none;
+}
+
+#servicos .items img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#servicos .items .item h3 {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+#servicos .items .item p {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+/* Sessão: Localização */
+#localizacao h2 {
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-family: var(--secondary-font);
+}
+
+#local-container {
+  display: flex;
+  height: 480px;
+}
+
+#local-container .fachada,
+#local-container .mapa {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+/* Sessão: Rodapé (Footer) */
+
+
+
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Espaço Floral | Seu Espaço Terapêutico em Águas Claras</title>
+  <script src="https://kit.fontawesome.com/d89b79d8ff.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montez|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <h1 class="logo">
+      <img id="logoimg" src="img/logoimg.png"
+        alt="Quatro Flores de Lis coloridas em formato de cruz - Parte da Logo do Espaço Floral">
+      <img id="logotxt" src="img/logotxt.png"
+        alt="Texto em rosa escrito Espaço Floral - Parte da Logo do Espaço Floral">
+    </h1>
+    <ul class="nav-menu">
+      <li class="nav-btn-li"><a href="index.html" class="nav-btn">Início</a></li>
+      <li class="nav-btn-li"><a href="sobre.html" class="nav-btn">Sobre</a></li>
+      <li class="nav-btn-li"><a href="cursos.html" class="nav-btn">Cursos</a></li>
+      <li class="nav-btn-li"><a href="servicos.html" class="nav-btn">Serviços</a></li>
+      <li class="nav-btn-li"><a href="blog.html" class="nav-btn">Blog</a></li>
+      <li class="nav-btn-li"><a href="loja.html" class="nav-btn">Loja</a></li>
+    </ul>
+  </nav>
+
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-txt showcase-heading">
+        Sejam bem-vindos ao <br>Espaço Floral!
+      </h1>
+      <p class="showcase-txt m-txt">
+        A Terapia Floral é terapia integrativa reconhecida pelo Ministério da Saúde e pode proporcionar bem-estar e
+        saúde em complemento ao tratamento médico convencional.
+      </p>
+      <a href="sobre.html" class="btn">Saiba Mais</a>
+      <span class="right-arrow">
+        <i class="fas fa-angle-right"></i>
+      </span>
+    </div>
+  </header>
+
+  <!-- Seção: Serviços prestados pelo Espaço Floral-->
+  <section id="servicos" class="bg-primary">
+    <h2 class="l-txt text-center">
+      Serviços
+    </h2>
+    <div class="items">
+      <div class="item">
+        <img src="img/florais-de-bach.jpg" alt="Frascos de Floral">
+        <h3>Terapia Floral</h3>
+        <p>Saiba como agendar seu atendimento com um dos nossos Terapeutas certificados.</p>
+      </div>
+      <div class="item">
+        <img src="img/maos-reiki.jpg" alt="Mãos próximas com bola de luz no meio">
+        <h3>Reiki</h3>
+        <p>Saiba mais sobre essa terapia que proporciona o equilíbrio energético</p>
+      </div>
+      <div class="item">
+        <img src="img/auriculo.jpeg" alt="Orelha recebendo sementes de auriculoterapia">
+        <h3>Auriculoterapia</h3>
+        <p>Agende sua sessão de auriculoterapia!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao">
+    <h2 class="bg-light l-txt text-center">Conheça Nossa Loja</h2>
+    <div id="local-container">
+      <div id="fachada">
+        <a href="https://www.google.com/maps/place/15%C2%B049'48.6%22S+48%C2%B000'37.5%22W/@-15.8301751,-48.0126059,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-15.8301751!4d-48.0104118">
+        <img src="img/vista-fachada.jpg" alt="Fachada de entrada do Vista Shopping">
+        </a>
+      </div>
+      <div class="mapa"></div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="text-center py-1 bg-primary m-txt">
+    <div class="container">
+      <p>Copywrite &copy; 2019, Espaço Floral, Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Local JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Maps API - It contains an async defer so that's why it's ok to put it after the main.js file -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFNYrFWlZVG9cQYsZMnJ16WRnEAYkufbQ&callback=initMap"
+    async defer></script>
+
+</body>
+
+</html>
