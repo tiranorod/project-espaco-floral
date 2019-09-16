@@ -283,10 +283,6 @@ a {
   flex-basis: 50%;
 }
 
-/* Footer Styles */
-#main-footer .container {
-}
-
 /* Media Queries */
 @media(max-width: 800px) {
   #navbar {
@@ -376,5 +372,6 @@ a {
 
   #servicos .items .item:last-child {
     border-bottom: none;
+  }
 
 }
