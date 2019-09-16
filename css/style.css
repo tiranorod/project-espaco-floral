@@ -5,6 +5,7 @@
   --tertiary-color: #7C318F;
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Montez', cursive;
+  --menu-speed: 0.75s;
 }
 
 * {
@@ -21,6 +22,7 @@ body {
   font-family: var(--primary-font);
   line-height: 1.4;
   background: var(--primary-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -91,6 +93,10 @@ a {
   font-size: 2rem;
 }
 
+#navbar .logo #logomini {
+  display: none;
+}
+
 #navbar .nav-menu {
   display: flex;
   align-items: center;
@@ -111,6 +117,10 @@ a {
 #navbar .nav-btn:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
+}
+
+#navbar .menu-wrap {
+  display: none;
 }
 
 /* Showcase Styles */
@@ -145,13 +155,13 @@ a {
   font-family: var(--primary-font);
   font-size: 4rem;
   color: var(--tertiary-color);
-  width: 600px;
+  width: 60vw;;
   padding-bottom: 3rem;
 }
 
 .showcase-txt {
   margin-bottom: 2rem;
-  width: 600px;
+  width: 60vw;
   color: var(--tertiary-color);
 }
 
@@ -273,6 +283,10 @@ a {
   flex-basis: 50%;
 }
 
+/* Footer Styles */
+#main-footer .container {
+}
+
 /* Media Queries */
 @media(max-width: 800px) {
   #navbar {
@@ -296,22 +310,71 @@ a {
 
   #local-container {
      width: 100vw;
-     height: 393px;
+     
   }
 
   #fachada {
-    height: inherit;
+    display: none;
   }
 
   .local-img {
-    width: 100vw;
-  }
-
-  .mapa {
-
+    visibility: hidden;
   }
 }
 
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    height: 24rem;
+    width: 100vw;
+    overflow-y: hidden;
+  }
 
+  #navbar .nav-menu {
+    display: none;
+  }
 
+  #navbar .menu-wrap {
+    display: block;
+  }
+  
+  #navbar .logo #logotxt {
+    display: none;
+  }
 
+  #navbar .logo #logoimg {
+    display: none;
+    
+  }
+  
+  #navbar .logo #logomini {
+    display: block;
+    font-size: 2rem;
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  #showcase .showcase-heading {
+    font-size: 3rem;
+  }
+
+  #showcase .showcase-txt {
+    font-size: 1.8rem;
+  }
+  
+  #servicos .items {
+    display: block;
+    padding: 1rem;
+  }
+
+  #servicos .items .item {
+    border-right: none;
+    border-bottom: 3px solid var(--secondary-color); 
+  }
+
+  #servicos .items .item:last-child {
+    border-bottom: none;
+
+}
