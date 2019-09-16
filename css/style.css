@@ -83,12 +83,12 @@ a {
 
 #navbar .logo {
   display: flex;
-  font-size: 2rem;
   align-items: center;
 }
 
 #navbar .logo #logotxt {
   padding-left: 2rem;
+  font-size: 2rem;
 }
 
 #navbar .nav-menu {
@@ -251,6 +251,11 @@ a {
 }
 
 /* Sessão: Localização */
+#localizacao {
+  display: flex;
+  flex-direction: column;
+}
+
 #localizacao h2 {
   margin-bottom: 0;
   padding: 10px 0;
@@ -268,8 +273,44 @@ a {
   flex-basis: 50%;
 }
 
-/* Sessão: Rodapé (Footer) */
+/* Media Queries */
+@media(max-width: 800px) {
+  #navbar {
+    height: 6.5rem;
+    justify-content: space-between;
+  }
+  
+  #navbar .logo #logoimg {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  
+  #navbar .logo #logotxt {
+    padding-left: 2rem;
+    font-size: 3rem;
+  }
+  
+  #navbar .nav-btn {
+    font-size: 2.4rem;
+  }
 
+  #local-container {
+     width: 100vw;
+     height: 393px;
+  }
+
+  #fachada {
+    height: inherit;
+  }
+
+  .local-img {
+    width: 100vw;
+  }
+
+  .mapa {
+
+  }
+}
 
 
 
