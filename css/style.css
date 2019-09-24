@@ -291,9 +291,8 @@ a {
 }
 
 /* Media Queries */
-@media(max-width: 800px) {
+@media(max-width: 900px) {
   #navbar {
-    height: 6.5rem;
     justify-content: space-between;
   }
   
@@ -311,18 +310,18 @@ a {
     font-size: 2.4rem;
   }
 
+  #showcase .showcase-heading {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  #showcase .showcase-txt {
+    font-size: 1.8rem;
+  }
+
   #local-container {
-     width: 100vw;
-     
-  }
-
-  #fachada {
-    display: none;
-  }
-
-  .local-img {
-    visibility: hidden;
-  }
+    width: 100vw;
+ }
 }
 
 @media (max-width: 500px) {
@@ -364,7 +363,7 @@ a {
   }
 
   #showcase .showcase-txt {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   
   #servicos .items {
@@ -381,4 +380,11 @@ a {
     border-bottom: none;
   }
 
+  #localizacao #local-container #fachada {
+    display: none;
+  }
+
+  #localizacao #local-container #mapa {
+    flex-basis: 100%;
+  }
 }
