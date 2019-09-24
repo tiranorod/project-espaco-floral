@@ -21,7 +21,6 @@ html {
 body {
   font-family: var(--primary-font);
   line-height: 1.4;
-  background: var(--primary-color);
   overflow-x: hidden;
 }
 
@@ -45,9 +44,7 @@ a {
 }
 
 .l-txt {
-  font-size: 4rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
+  font-size: 3rem;
 }
 
 .m-txt {
@@ -75,9 +72,9 @@ a {
   color: var(--primary-color);
   top: 0;
   left: 0;
-  height: 115px;
+  height: 6rem;
   width: 100vw;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 1;
   opacity: 0.9;
   border-bottom: 2px var(--tertiary-color) solid;
@@ -86,6 +83,10 @@ a {
 #navbar .logo {
   display: flex;
   align-items: center;
+}
+
+#navbar .logo #logoimg {
+  height: 5.5rem;
 }
 
 #navbar .logo #logotxt {
@@ -102,6 +103,7 @@ a {
   align-items: center;
   list-style: none;
   justify-content: space-around;
+  padding-right: 2rem;
 } 
 
 #navbar .nav-btn {
@@ -131,7 +133,7 @@ a {
   background: var(--primary-color) url('/img/madeira-floral-m.png') no-repeat center center/cover;
   color: var(--primary-color);
   position: relative;
-  height: 500px;
+  height: 30rem;
   border-bottom: 2px var(--tertiary-color) solid;
 }
 
@@ -151,7 +153,7 @@ a {
   background-color: var(--secondary-color-op);
 }
 
-.showcase-heading {
+#showcase .showcase-heading {
   font-family: var(--primary-font);
   font-size: 4rem;
   color: var(--tertiary-color);
@@ -159,50 +161,50 @@ a {
   padding-bottom: 3rem;
 }
 
-.showcase-txt {
-  margin-bottom: 2rem;
+#showcase .showcase-txt {
+  margin-bottom: 1rem;
   width: 60vw;
   color: var(--tertiary-color);
 }
 
 .left-arrow {
   position: absolute;
-  top: 254px;
+  top: 135px;
   left: 10px;
 }
 
 .fa-angle-left {
   color: var(--tertiary-color);
-  font-size: 3rem;
+  font-size: 2rem;
   background: var(--secondary-color);
   border-radius: 50%;
-  opacity: 0.75;
-  padding: 6px 13.5px;
+  opacity: 0.5;
+  padding: 0.4rem 0.9rem;
   border: 2px solid var(--tertiary-color);
 }
 
 .right-arrow {
   position: absolute;
-  top: 254px;
+  top: 135px;
   right: 10px;
 }
 
 .fa-angle-right {
   color: var(--tertiary-color);
-  font-size: 3rem;
+  font-size: 2rem;
   background: var(--secondary-color);
   border-radius: 50%;
-  opacity: 0.75;
-  padding: 6px 13.5px;
+  opacity: 0.5;
+  padding:  0.4rem 0.9rem;
   border: 2px solid var(--tertiary-color);
 }
 
 #showcase .showcase-content .btn {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   color: var(--secondary-color);
   background: var(--primary-color);
-  font-size: 2.5rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   margin: 0 0.25rem;
   border-radius: 5px;
   transition: all 0.4s ease;
@@ -219,12 +221,12 @@ a {
 /* Serviços Styles */
 #servicos h2 {
   font-family: var(--secondary-font);
-  padding: 10px 0;
+  padding-top: 1rem;
 }
 
 #servicos .items {
   display: flex;
-  padding: 1rem;
+  
 }
 
 #servicos .items .item {
@@ -245,18 +247,18 @@ a {
 }
 
 #servicos .items .item h3 {
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
   font-family: var(--secondary-font);
   font-size: 3rem;
   color: var(--secondary-color);
 }
 
 #servicos .items .item p {
-  padding: 1rem;
+  padding-top: 1rem;
   margin-bottom: 1rem;
   font-family: var(--primary-font);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 
@@ -268,18 +270,23 @@ a {
 
 #localizacao h2 {
   margin-bottom: 0;
-  padding: 10px 0;
+  padding: 1rem 0;
   font-family: var(--secondary-font);
 }
 
-#local-container {
+#localizacao #local-container {
   display: flex;
-  height: 480px;
+  height: 48rem;
 }
 
-#local-container .fachada,
-#local-container .mapa {
-  flex: 1;
+#localizacao #local-container #fachada {
+  background: url(../img/vista-fachada.jpg) no-repeat center center/cover;
+  margin: 0;
+  width: 100%;
+}
+
+#localizacao #local-container #mapa,
+#localizacao #local-container #fachada {
   flex-basis: 50%;
 }
 

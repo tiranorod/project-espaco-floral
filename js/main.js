@@ -4,7 +4,7 @@ function initMap() {
   const loc = { lat: -15.8301751, lng: -48.0104118 };
   
   //Center map on location chosen
-  const map = new google.maps.Map(document.querySelector('.mapa'), 
+  const map = new google.maps.Map(document.querySelector('#mapa'), 
   {
     center: loc,
     zoom: 16
